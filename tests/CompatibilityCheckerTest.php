@@ -47,9 +47,9 @@ final class CompatibilityCheckerTest extends TestCase
     public function testForeachInternalPointer()
     {
         $php4Output = [
-            0 => 1,
-            1 => 2,
-            2 => false,
+            0 => 'This is a cat',
+            1 => 'Hello World from Foo',
+            2 => 'Goodbye from Foo',
         ];
         $this->assertSame($php4Output, $this->app->variableMethods());
     }
